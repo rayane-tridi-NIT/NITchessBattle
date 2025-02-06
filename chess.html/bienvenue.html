@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIT Chess Battle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: black;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .card {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: white;
+        }
+        button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            padding: 20px 30px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 10px 0;
+            display: block;
+            width: 100%;
+            font-size: 18px;
+        }
+        button:hover {
+            background-color: #333333;
+        }
+        button:focus {
+            outline: none;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        .image-background {
+            background-image: url('Black_and_White_Chess_Club_Logo_2.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 400px;
+            width: 100%;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NIT Chess Battle</h1>
+        
+        <!-- Vidéo avec miniature -->
+        <video controls poster="miniture.png">
+            <source src="BandeANNONCE.mp4" type="video/mp4">
+            <source src="animation chess final.mov" type="video/quicktime">
+            Votre navigateur ne prend pas en charge la lecture de cette vidéo.
+        </video>
+
+        <center><strong>Rejoignez-nous pour un tournoi intense et stratégique !</strong></center>
+
+        <div class="image-background"></div>
+
+        <div class="card-container">
+            <div class="card" style="color: black;">
+                <h2>Bienvenue</h2>
+                <a href="https://forms.office.com/r/JWeRbkS8bk?origin=lprLink"><button>Participer</button></a>
+                <button onclick="uploadPhoto()">Photo Mémorable</button>
+                <a href="information.html"><button>Plus d'Information</button></a>
+            </div>
+        </div>
+        <p id="message"></p>
+    </div>
+    <script>
+        function uploadPhoto() {
+            alert("Les photos seront disponibles après l'événement NIT chess battle !");
+        }
+    </script>
+</body>
+</html>
